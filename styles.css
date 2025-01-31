@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    word-wrap: anywhere;
+}
+
+/* General styles */
+
+html {
+    font-size: 8px;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.button {
+    display: inline-block;
+    padding: 1.17rem 1.94rem;
+    border-radius: 4rem;
+    border: none;
+    text-transform: uppercase;
+}
+
+.bg-blue {
+    background-color: #7ae5fd;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.screen {
+    margin: 0 1.8rem 8.89rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-large {
+    font-size: 3.33rem;
+}
+
+.text-big {
+    font-size: 2.56rem;
+}
+
+.text-normal {
+    font-size: 1.5rem;
+}
+
+.text-small {
+    font-size: 1.11rem;
+}
+
+.text-aside {
+    color: #73a6b1;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.78rem;
+}
+
+.visually-hidden {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.img-adaptive,
+.img-big-adaptive {
+    width: 100%;
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+/* Header styles */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 0.8%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    z-index: 5;
+}
+
+.logo {
+    width: 3.6rem;
+    margin-left: 3%;
+}
+
+.logo-adaptive {
+    display: none;
+    flex-shrink: 1;
+}
+
+.nav-container {
+    flex: 1;
+    margin: 0 3%;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-item {
+    flex: 1;
+}
+
+/* First screen */
+
+.first-screen {
+    background: url("./assets/images/Frame\ 12146\ 1.png");
+    background-size: cover;
+}
+
+.first-screen>img {
+    width: 100%;
+}
+
+.first-screen-info {
+    padding: 14.3% 3%;
+}
+
+.first-screen-info>*+* {
+    margin-top: 1.7rem;
+}
+
+.main-title {
+    color: #fffbf5;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 0.95;
+    overflow-wrap: break-word;
+}
+
+.first-screen-motto {
+    width: 70%;
+}
+
+/* Description screen */
+
+.description-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.83rem;
+    padding: 8.89rem 0;
+}
+
+.description-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.44rem;
+    background-color: #f1fdff;
+    padding: 3% 4%;
+}
+
+.description-card>* {
+    flex: 1;
+}
+
+.description-card>img {
+    border-radius: 0.56rem;
+    overflow: hidden;
+}
+
+.description-card-text {
+    width: 50%;
+}
+
+.description-card-text>*+* {
+    margin-top: 0.56rem;
+}
+
+/* Support us screen */
+
+.our-goal-side-img {
+    width: 25%;
+    position: relative;
+    left: 70%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.our-goal-text-container {
+    width: 100%;
+    background-color: #f1fdff;
+}
+
+.our-goal-text {
+    position: relative;
+    padding: 3% 4%;
+    z-index: 1;
+}
+
+.our-goal-shape-container {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    overflow: clip;
+}
+
+.our-goal-shape-img {
+    position: relative;
+    bottom: 1%;
+    left: 50%;
+}
+
+.support-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.78rem;
+}
+
+.support-us-text-container>*+* {
+    margin-top: 0.83rem;
+}
+
+/* Live counter styles */
+
+.counter {
+    display: block flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.67rem;
+}
+
+.counter-separator {
+    width: 0.17rem;
+    background-color: #9ad2de;
+}
+
+.counter-value-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.72rem
+}
+
+/* Our contacts screen */
+.our-contacts-screen {
+    align-items: stretch;
+    padding: 0 0 8.89rem;
+    background-color: #f9fadf;
+}
+
+.our-contacts-screen>* {
+    margin: 0 3.94rem;
+}
+
+.our-contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5.17rem;
+    margin-top: 2.78rem;
+}
+
+.our-contacts-container>* {
+    flex: 1;
+}
+
+.our-contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.17rem;
+}
+
+.our-contacts-info>* {
+    max-width: 70%;
+}
+
+.icon-small {
+    width: 2rem;
+    height: auto;
+}
+
+.contact-us-container {
+    display: flex;
+    align-items: center;
+    gap: 5.17rem;
+    border-radius: 0.56rem;
+    padding: 3.33rem;
+}
+
+.contact-us-container>* {
+    flex: 1;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.17rem;
+}
+
+.contact-form>input {
+    color: #000000;
+    background-color: #f9fadf;
+    padding: 1.17rem 0 1.17rem 2.39rem;
+    border-radius: 3.89rem;
+    border: none;
+}
+
+.contact-form>input:placeholder-shown {
+    color: #000000;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+
+    .menu-list {
+        flex-wrap: nowrap;
+        gap: 3%;
+    }
+
+    .menu-item {
+        flex: initial;
+    }
+
+    .img-adaptive {
+        display: initial;
+    }
+
+    .our-goal-text-container {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .our-goal-text {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .screen {
+        margin: 0 3.94rem 8.89rem;
+    }
+
+    .first-screen-info {
+        width: 70%;
+        padding: 14.3% 7%;
+    }
+
+    .our-contacts-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+    .img-big-adaptive {
+        display: initial;
+    }
+
+    .description-header {
+        padding: 8.89rem 15%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
